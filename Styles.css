@@ -1,0 +1,272 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Un gris claro de fondo */
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Azul principal para enlaces */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+.button {
+    display: inline-block;
+    background-color: #28a745; /* Verde para botones de acción */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.button:hover {
+    background-color: #1e7e34; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('imagen-hero.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro para mejorar la legibilidad del texto */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté sobre el overlay */
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+/* Featured Tours Section */
+.featured-tours {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.featured-tours h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #343a40; /* Un gris oscuro para los títulos de sección */
+}
+
+.tour-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 25px;
+    text-align: left;
+    width: calc(33% - 40px); /* Para mostrar 3 tarjetas por fila con margen */
+    box-sizing: border-box;
+}
+
+.tour-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.tour-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.tour-card p {
+    margin-bottom: 15px;
+    color: #6c757d; /* Un gris más claro para el texto */
+}
+
+.tour-card strong {
+    color: #28a745; /* Verde para destacar el precio */
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #007bff; /* Azul para la sección de llamada a la acción */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cta-section p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #343a40;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 25px;
+    text-align: left;
+    width: calc(50% - 40px); /* Para mostrar 2 testimonios por fila con margen */
+    box-sizing: border-box;
+}
+
+.testimonial-card p {
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+.testimonial-card strong {
+    display: block;
+    text-align: right;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #343a40; /* Gris oscuro para la sección de contacto */
+    color: white;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #adb5bd; /* Un gris más claro para el texto */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ced4da; /* Un borde gris claro */
+    border-radius: 5px;
+    font-size: 1em;
+    color: #495057; /* Color de texto para los inputs */
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form button {
+    background-color: #28a745; /* Verde para el botón de enviar */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #1e7e34;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #343a40;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Media Queries para hacerlo responsivo */
+@media (max-width: 768px) {
+    .tour-card, .testimonial-card {
+        width: calc(100% - 40px);
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .featured-tours h2, .testimonials h2, .contact-section h2 {
+        font-size: 2em;
+    }
+
+    .cta-section h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .tour-card {
+        width: calc(50% - 40px);
+    }
+}
