@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre Experiencias Inolvidables | [Nombre de tu Agencia de Tours]</title>
+    <link rel="stylesheet" href="styles.css"> <style>
+        /* Estilos CSS básicos para la landing page (puedes mover esto a un archivo styles.css) */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .hero {
+            background-image: url('imagen-hero.jpg'); /* Reemplaza con una imagen atractiva de un tour */
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .featured-tours {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .featured-tours h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        .tour-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            text-align: left;
+        }
+        .tour-card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .tour-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .tour-card p {
+            margin-bottom: 15px;
+        }
+        .cta-section {
+            background-color: #28a745;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .testimonials {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .testimonials h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        .testimonial-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            text-align: left;
+        }
+        .testimonial-card p {
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .testimonial-card strong {
+            display: block;
+            text-align: right;
+            color: #555;
+        }
+        .contact-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #343a40;
+            color: white;
+        }
+        .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Descubre la Aventura de tus Sueños</h1>
+        <p>Explora destinos increíbles con nuestros tours diseñados para ti.</p>
+        <a href="#featured" class="button">Ver nuestros tours</a>
+    </header>
+
+    <section id="featured" class="featured-tours">
+        <h2>Nuestros Tours Más Populares</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div class="tour-card" style="width: 300px;">
+                <img src="imagen-tour-1.jpg" alt="Tour 1"> <h3>Aventura en la Montaña [Nombre del Tour 1]</h3>
+                <p>Descubre paisajes impresionantes y vive la adrenalina de la montaña. Incluye transporte, guía experto y equipo de seguridad.</p>
+                <p><strong>Desde: $[Precio]</strong></p>
+                <a href="pagina-del-tour-1.html" class="button">Más detalles</a>
+            </div>
+            <div class="tour-card" style="width: 300px;">
+                <img src="imagen-tour-2.jpg" alt="Tour 2"> <h3>Exploración Histórica [Nombre del Tour 2]</h3>
+                <p>Sumérgete en la historia y cultura de [Destino]. Visitas guiadas a sitios emblemáticos y experiencias únicas.</p>
+                <p><strong>Desde: $[Precio]</strong></p>
+                <a href="pagina-del-tour-2.html" class="button">Más detalles</a>
+            </div>
+            <div class="tour-card" style="width: 300px;">
+                <img src="imagen-tour-3.jpg" alt="Tour 3"> <h3>Relajación en la Playa [Nombre del Tour 3]</h3>
+                <p>Disfruta de las playas paradisíacas de [Destino]. Incluye alojamiento, traslados y actividades acuáticas opcionales.</p>
+                <p><strong>Desde: $[Precio]</strong></p>
+                <a href="pagina-del-tour-3.html" class="button">Más detalles</a>
+            </div>
+            </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>¿Listo para la Aventura?</h2>
+        <p>¡No esperes más para vivir experiencias inolvidables! Reserva tu tour hoy mismo.</p>
+        <a href="#contact" class="button">Contáctanos para reservar</a>
+    </section>
+
+    <section class="testimonials">
+        <h2>Lo que dicen nuestros viajeros</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div class="testimonial-card" style="width: 400px;">
+                <p>"El tour a la montaña fue increíble. Los guías fueron muy profesionales y los paisajes espectaculares. ¡Definitivamente lo recomiendo!"</p>
+                <strong>- María Rodríguez</strong>
+            </div>
+            <div class="testimonial-card" style="width: 400px;">
+                <p>"Disfruté mucho el tour histórico. Aprendí muchísimo sobre la cultura local y los sitios visitados fueron fascinantes."</p>
+                <strong>- Carlos Pérez</strong>
+            </div>
+            </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>¡Contáctanos y Reserva tu Aventura!</h2>
+        <p>Nuestro equipo está listo para ayudarte a planificar el viaje perfecto.</p>
+        <div class="contact-form">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo Electrónico">
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 [Nombre de tu Agencia de Tours]. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Aquí puedes agregar código JavaScript si necesitas interactividad
+    </script>
+</body>
+</html>
